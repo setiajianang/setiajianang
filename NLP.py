@@ -28,6 +28,5 @@ token_clean = sum(data['lemmatized'], [])
 
 unigram = (pd.Series(nltk.ngrams(token_clean, 1)))
 bigram = (pd.Series(nltk.ngrams(token_clean, 2)).value_counts())
-print(unigram)
+print(data['lemmatized'])
 print(bigram)
-print(data.info())
